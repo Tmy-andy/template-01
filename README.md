@@ -192,15 +192,3 @@ Toast.show('info', 'Tiêu đề', 'Nội dung');
 1. Tạo form HTML với id
 2. Thêm handler trong `Forms.init()`
 3. Xử lý validation và submit
-
-## 📄 License
-
-MIT License - Tự do sử dụng cho mục đích cá nhân và thương mại.
-
-## 👨‍💻 Tác giả
-
-Được tạo bởi GitHub Copilot
-
----
-
-⭐ Nếu thấy hữu ích, hãy cho một star nhé!
