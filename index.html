@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxuria - Trang Chủ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-gem"></i>
+                    <span>Luxuria</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Trang Chủ</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="services.html">Dịch Vụ</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-outline" id="loginBtn">Đăng Nhập</button>
+                <button class="btn btn-primary" id="registerBtn">Đăng Ký</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Chào Mừng Đến Với <span class="highlight">Luxuria</span></h1>
+            <p class="hero-subtitle">Trải nghiệm sự sang trọng và đẳng cấp trong từng dịch vụ của chúng tôi</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-large" id="exploreBtn">
+                    <i class="fas fa-compass"></i> Khám Phá Ngay
+                </button>
+                <button class="btn btn-outline btn-large" id="watchVideoBtn">
+                    <i class="fas fa-play-circle"></i> Xem Video
+                </button>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tại Sao Chọn Chúng Tôi</h2>
+                <p class="section-subtitle">Những giá trị cốt lõi mà chúng tôi mang lại</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Chất Lượng Cao Cấp</h3>
+                    <p>Cam kết mang đến sản phẩm và dịch vụ với chất lượng tốt nhất</p>
+                    <button class="btn btn-text feature-btn" data-feature="quality">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Hỗ Trợ 24/7</h3>
+                    <p>Đội ngũ hỗ trợ chuyên nghiệp luôn sẵn sàng phục vụ bạn</p>
+                    <button class="btn btn-text feature-btn" data-feature="support">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bảo Mật Tuyệt Đối</h3>
+                    <p>Thông tin của bạn được bảo vệ với công nghệ mã hóa tiên tiến</p>
+                    <button class="btn btn-text feature-btn" data-feature="security">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Tốc Độ Nhanh Chóng</h3>
+                    <p>Xử lý nhanh gọn, tiết kiệm thời gian quý báu của bạn</p>
+                    <button class="btn btn-text feature-btn" data-feature="speed">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1500">0</div>
+                    <div class="stat-label">Khách Hàng</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="320">0</div>
+                    <div class="stat-label">Dự Án</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Giải Thưởng</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Năm Kinh Nghiệm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dịch Vụ Nổi Bật</h2>
+                <p class="section-subtitle">Khám phá các dịch vụ cao cấp của chúng tôi</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <div class="service-overlay">
+                            <button class="btn btn-primary service-detail-btn" data-service="design">Xem Chi Tiết</button>
+                        </div>
+                        <i class="fas fa-palette service-icon-bg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Thiết Kế Sáng Tạo</h3>
+                        <p>Thiết kế độc đáo, ấn tượng và chuyên nghiệp</p>
+                        <div class="service-price">Từ 5.000.000đ</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <div class="service-overlay">
+                            <button class="btn btn-primary service-detail-btn" data-service="development">Xem Chi Tiết</button>
+                        </div>
+                        <i class="fas fa-code service-icon-bg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Phát Triển Website</h3>
+                        <p>Website hiện đại, responsive và tối ưu SEO</p>
+                        <div class="service-price">Từ 10.000.000đ</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <div class="service-overlay">
+                            <button class="btn btn-primary service-detail-btn" data-service="marketing">Xem Chi Tiết</button>
+                        </div>
+                        <i class="fas fa-bullhorn service-icon-bg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Chiến lược marketing hiệu quả, tăng doanh số</p>
+                        <div class="service-price">Từ 8.000.000đ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn btn-outline btn-large">Xem Tất Cả Dịch Vụ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Khách Hàng Nói Gì</h2>
+                <p class="section-subtitle">Những đánh giá từ khách hàng đã sử dụng dịch vụ</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Dịch vụ tuyệt vời, đội ngũ chuyên nghiệp. Tôi rất hài lòng với kết quả nhận được."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">NH</div>
+                            <div class="author-info">
+                                <h4>Nguyễn Hoàng</h4>
+                                <span>CEO, TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Chất lượng vượt mong đợi, giá cả hợp lý. Chắc chắn sẽ tiếp tục hợp tác."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">TL</div>
+                            <div class="author-info">
+                                <h4>Trần Linh</h4>
+                                <span>Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>"Thời gian thực hiện nhanh, hỗ trợ nhiệt tình. Rất đáng để thử."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PM</div>
+                            <div class="author-info">
+                                <h4>Phạm Minh</h4>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prevTestimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn next-btn" id="nextTestimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Đăng Ký Nhận Tin</h2>
+                    <p>Nhận thông tin ưu đãi và tin tức mới nhất từ chúng tôi</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Nhập email của bạn" required id="newsletterEmail">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Đăng Ký
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Luxuria</span>
+                    </div>
+                    <p>Mang đến sự sang trọng và đẳng cấp trong từng dịch vụ.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-social="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-social="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="about.html">Giới Thiệu</a></li>
+                        <li><a href="services.html">Dịch Vụ</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="services.html#design">Thiết Kế</a></li>
+                        <li><a href="services.html#development">Phát Triển Web</a></li>
+                        <li><a href="services.html#marketing">Marketing</a></li>
+                        <li><a href="services.html#consulting">Tư Vấn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@luxuria.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxuria. Tất cả quyền được bảo lưu.</p>
+                <div class="footer-links">
+                    <a href="#" id="privacyLink">Chính Sách Bảo Mật</a>
+                    <a href="#" id="termsLink">Điều Khoản Sử Dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Nhập</h2>
+                <button class="modal-close" data-modal="loginModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Ghi nhớ đăng nhập</span>
+                        </label>
+                        <a href="#" id="forgotPasswordLink">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Nhập</button>
+                </form>
+                <div class="modal-divider">
+                    <span>Hoặc</span>
+                </div>
+                <div class="social-login">
+                    <button class="btn btn-social btn-google" id="googleLogin">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button class="btn btn-social btn-facebook" id="facebookLogin">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </button>
+                </div>
+                <p class="modal-footer-text">
+                    Chưa có tài khoản? <a href="#" id="switchToRegister">Đăng ký ngay</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Ký</h2>
+                <button class="modal-close" data-modal="registerModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="registerFirstName">Họ</label>
+                            <input type="text" id="registerFirstName" placeholder="Nhập họ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerLastName">Tên</label>
+                            <input type="text" id="registerLastName" placeholder="Nhập tên" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPhone">Số điện thoại</label>
+                        <input type="tel" id="registerPhone" placeholder="Nhập số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="registerPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="password-strength" id="passwordStrength"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Xác nhận mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="registerConfirmPassword" placeholder="Nhập lại mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <span>Tôi đồng ý với <a href="#" id="termsLinkRegister">Điều khoản sử dụng</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                </form>
+                <p class="modal-footer-text">
+                    Đã có tài khoản? <a href="#" id="switchToLogin">Đăng nhập</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Detail Modal -->
+    <div class="modal" id="featureModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="featureModalTitle">Chi Tiết Tính Năng</h2>
+                <button class="modal-close" data-modal="featureModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="featureModalBody">
+                <!-- Content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Detail Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="serviceModalTitle">Chi Tiết Dịch Vụ</h2>
+                <button class="modal-close" data-modal="serviceModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="serviceModalBody">
+                <!-- Content will be dynamically loaded -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-modal="serviceModal">Đóng</button>
+                <button class="btn btn-primary" id="orderServiceBtn">Đặt Dịch Vụ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content modal-video">
+            <button class="modal-close" data-modal="videoModal"><i class="fas fa-times"></i></button>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Video giới thiệu Luxuria</p>
+                    <small>Video demo - Nhấn ESC để đóng</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgotPasswordModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Quên Mật Khẩu</h2>
+                <button class="modal-close" data-modal="forgotPasswordModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">Nhập email của bạn và chúng tôi sẽ gửi link đặt lại mật khẩu.</p>
+                <form id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="forgotEmail">Email</label>
+                        <input type="email" id="forgotEmail" placeholder="Nhập email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Gửi Link Đặt Lại</button>
+                </form>
+                <p class="modal-footer-text">
+                    <a href="#" id="backToLoginLink"><i class="fas fa-arrow-left"></i> Quay lại đăng nhập</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div class="modal" id="termsModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Điều Khoản Sử Dụng</h2>
+                <button class="modal-close" data-modal="termsModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <h3>1. Điều khoản chung</h3>
+                <p>Bằng việc truy cập và sử dụng website Luxuria, bạn đồng ý tuân thủ các điều khoản và điều kiện được nêu trong tài liệu này.</p>
+                
+                <h3>2. Quyền sở hữu trí tuệ</h3>
+                <p>Tất cả nội dung trên website bao gồm văn bản, hình ảnh, logo, biểu tượng đều thuộc quyền sở hữu của Luxuria và được bảo vệ bởi luật sở hữu trí tuệ.</p>
+                
+                <h3>3. Sử dụng dịch vụ</h3>
+                <p>Người dùng cam kết sử dụng dịch vụ một cách hợp pháp và không vi phạm quyền lợi của bên thứ ba.</p>
+                
+                <h3>4. Bảo mật thông tin</h3>
+                <p>Chúng tôi cam kết bảo vệ thông tin cá nhân của người dùng theo chính sách bảo mật đã công bố.</p>
+                
+                <h3>5. Giới hạn trách nhiệm</h3>
+                <p>Luxuria không chịu trách nhiệm cho bất kỳ thiệt hại nào phát sinh từ việc sử dụng hoặc không thể sử dụng dịch vụ.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="termsModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="modal" id="privacyModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Chính Sách Bảo Mật</h2>
+                <button class="modal-close" data-modal="privacyModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <h3>1. Thu thập thông tin</h3>
+                <p>Chúng tôi thu thập thông tin cá nhân khi bạn đăng ký tài khoản, sử dụng dịch vụ hoặc liên hệ với chúng tôi.</p>
+                
+                <h3>2. Sử dụng thông tin</h3>
+                <p>Thông tin được sử dụng để cung cấp dịch vụ, cải thiện trải nghiệm người dùng và gửi thông tin marketing (nếu được đồng ý).</p>
+                
+                <h3>3. Bảo vệ thông tin</h3>
+                <p>Chúng tôi áp dụng các biện pháp bảo mật kỹ thuật và tổ chức để bảo vệ thông tin cá nhân của bạn.</p>
+                
+                <h3>4. Chia sẻ thông tin</h3>
+                <p>Chúng tôi không bán hoặc chia sẻ thông tin cá nhân của bạn cho bên thứ ba, trừ khi có sự đồng ý hoặc theo yêu cầu pháp luật.</p>
+                
+                <h3>5. Quyền của người dùng</h3>
+                <p>Bạn có quyền truy cập, sửa đổi, xóa thông tin cá nhân của mình và rút lại sự đồng ý bất cứ lúc nào.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="privacyModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content modal-small">
+            <div class="modal-body text-center">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 id="successTitle">Thành Công!</h2>
+                <p id="successMessage">Thao tác đã được thực hiện thành công.</p>
+                <button class="btn btn-primary" data-modal="successModal">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div class="modal" id="confirmModal">
+        <div class="modal-content modal-small">
+            <div class="modal-body text-center">
+                <div class="confirm-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h2 id="confirmTitle">Xác Nhận</h2>
+                <p id="confirmMessage">Bạn có chắc chắn muốn thực hiện hành động này?</p>
+                <div class="modal-buttons">
+                    <button class="btn btn-outline" id="confirmCancel">Hủy</button>
+                    <button class="btn btn-primary" id="confirmOk">Xác Nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

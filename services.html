@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxuria - Dịch Vụ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-gem"></i>
+                    <span>Luxuria</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="services.html" class="active">Dịch Vụ</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-outline" id="loginBtn">Đăng Nhập</button>
+                <button class="btn btn-primary" id="registerBtn">Đăng Ký</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Dịch Vụ</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Trang Chủ</a>
+                <span>/</span>
+                <span>Dịch Vụ</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section class="services-list">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dịch Vụ Của Chúng Tôi</h2>
+                <p class="section-subtitle">Giải pháp toàn diện cho mọi nhu cầu số hóa của doanh nghiệp</p>
+            </div>
+
+            <!-- Service 1: Design -->
+            <div class="service-detail-card" id="design">
+                <div class="service-detail-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h3>Thiết Kế Sáng Tạo</h3>
+                    <p class="service-description">Chúng tôi cung cấp dịch vụ thiết kế đồ họa chuyên nghiệp, bao gồm thiết kế logo, bộ nhận diện thương hiệu, ấn phẩm marketing và giao diện người dùng (UI/UX).</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Thiết kế Logo & Branding</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Thiết kế ấn phẩm</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Motion Graphics</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <span class="price-label">Giá từ:</span>
+                        <span class="price-value">5.000.000đ</span>
+                    </div>
+                    <button class="btn btn-primary order-service-btn" data-service="design">
+                        <i class="fas fa-shopping-cart"></i> Đặt Dịch Vụ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 2: Development -->
+            <div class="service-detail-card" id="development">
+                <div class="service-detail-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h3>Phát Triển Website</h3>
+                    <p class="service-description">Xây dựng website chuyên nghiệp với công nghệ hiện đại, tối ưu hóa SEO và trải nghiệm người dùng xuất sắc. Từ landing page đơn giản đến hệ thống e-commerce phức tạp.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Website doanh nghiệp</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>E-commerce</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Web Application</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>CMS & Portal</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <span class="price-label">Giá từ:</span>
+                        <span class="price-value">10.000.000đ</span>
+                    </div>
+                    <button class="btn btn-primary order-service-btn" data-service="development">
+                        <i class="fas fa-shopping-cart"></i> Đặt Dịch Vụ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 3: Marketing -->
+            <div class="service-detail-card" id="marketing">
+                <div class="service-detail-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h3>Digital Marketing</h3>
+                    <p class="service-description">Chiến lược marketing số toàn diện giúp tăng nhận diện thương hiệu, thu hút khách hàng tiềm năng và tối ưu hóa tỷ lệ chuyển đổi.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>SEO & SEM</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Social Media Marketing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Content Marketing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Email Marketing</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <span class="price-label">Giá từ:</span>
+                        <span class="price-value">8.000.000đ/tháng</span>
+                    </div>
+                    <button class="btn btn-primary order-service-btn" data-service="marketing">
+                        <i class="fas fa-shopping-cart"></i> Đặt Dịch Vụ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 4: Consulting -->
+            <div class="service-detail-card" id="consulting">
+                <div class="service-detail-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h3>Tư Vấn Chiến Lược</h3>
+                    <p class="service-description">Dịch vụ tư vấn chuyển đổi số và chiến lược công nghệ, giúp doanh nghiệp định hướng phát triển và tối ưu hóa quy trình.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Tư vấn chuyển đổi số</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Phân tích & Nghiên cứu</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Hoạch định chiến lược</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Training & Workshop</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <span class="price-label">Giá từ:</span>
+                        <span class="price-value">15.000.000đ</span>
+                    </div>
+                    <button class="btn btn-primary order-service-btn" data-service="consulting">
+                        <i class="fas fa-shopping-cart"></i> Đặt Dịch Vụ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 5: Mobile -->
+            <div class="service-detail-card" id="mobile">
+                <div class="service-detail-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h3>Phát Triển Mobile App</h3>
+                    <p class="service-description">Xây dựng ứng dụng di động native và cross-platform cho iOS và Android với trải nghiệm người dùng mượt mà.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>iOS Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Android Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>React Native / Flutter</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>App Maintenance</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <span class="price-label">Giá từ:</span>
+                        <span class="price-value">50.000.000đ</span>
+                    </div>
+                    <button class="btn btn-primary order-service-btn" data-service="mobile">
+                        <i class="fas fa-shopping-cart"></i> Đặt Dịch Vụ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 6: Support -->
+            <div class="service-detail-card" id="support">
+                <div class="service-detail-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h3>Hỗ Trợ & Bảo Trì</h3>
+                    <p class="service-description">Dịch vụ hỗ trợ kỹ thuật và bảo trì website/app 24/7, đảm bảo hệ thống của bạn luôn hoạt động ổn định.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Hỗ trợ 24/7</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Backup & Recovery</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Security Updates</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Performance Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <span class="price-label">Giá từ:</span>
+                        <span class="price-value">3.000.000đ/tháng</span>
+                    </div>
+                    <button class="btn btn-primary order-service-btn" data-service="support">
+                        <i class="fas fa-shopping-cart"></i> Đặt Dịch Vụ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gói Dịch Vụ</h2>
+                <p class="section-subtitle">Lựa chọn gói dịch vụ phù hợp với nhu cầu của bạn</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active" data-period="monthly">Hàng Tháng</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" data-period="yearly">Hàng Năm <span class="discount-badge">-20%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <p>Dành cho cá nhân và startup</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">đ</span>
+                        <span class="amount" data-monthly="5000000" data-yearly="4000000">5.000.000</span>
+                        <span class="period">/tháng</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1 Website</li>
+                        <li><i class="fas fa-check"></i> 5GB Hosting</li>
+                        <li><i class="fas fa-check"></i> SSL Certificate</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> SEO Optimization</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom Design</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block select-plan-btn" data-plan="basic">Chọn Gói</button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Phổ Biến</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>Dành cho doanh nghiệp vừa</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">đ</span>
+                        <span class="amount" data-monthly="12000000" data-yearly="9600000">12.000.000</span>
+                        <span class="period">/tháng</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 3 Websites</li>
+                        <li><i class="fas fa-check"></i> 20GB Hosting</li>
+                        <li><i class="fas fa-check"></i> SSL Certificate</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                        <li><i class="fas fa-check"></i> Custom Design</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block select-plan-btn" data-plan="professional">Chọn Gói</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>Dành cho doanh nghiệp lớn</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">đ</span>
+                        <span class="amount" data-monthly="25000000" data-yearly="20000000">25.000.000</span>
+                        <span class="period">/tháng</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited Websites</li>
+                        <li><i class="fas fa-check"></i> 100GB Hosting</li>
+                        <li><i class="fas fa-check"></i> SSL Certificate</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                        <li><i class="fas fa-check"></i> Full Customization</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block select-plan-btn" data-plan="enterprise">Chọn Gói</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+                <p class="section-subtitle">Giải đáp những thắc mắc phổ biến</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Thời gian hoàn thành một dự án website là bao lâu?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Thời gian hoàn thành phụ thuộc vào độ phức tạp của dự án. Thông thường, một website doanh nghiệp đơn giản mất 2-4 tuần, trong khi các dự án lớn hơn có thể mất 2-3 tháng.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Chi phí dịch vụ được tính như thế nào?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Chi phí được tính dựa trên yêu cầu cụ thể của dự án, bao gồm số lượng trang, tính năng, độ phức tạp thiết kế và thời gian thực hiện. Chúng tôi cung cấp báo giá chi tiết sau khi trao đổi nhu cầu.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Luxuria có hỗ trợ bảo trì sau khi bàn giao không?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Có, chúng tôi cung cấp gói bảo trì và hỗ trợ kỹ thuật sau bàn giao. Khách hàng được hỗ trợ miễn phí trong 3 tháng đầu và có thể đăng ký gói bảo trì dài hạn với chi phí hợp lý.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tôi có thể yêu cầu chỉnh sửa trong quá trình thực hiện không?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tất nhiên! Chúng tôi làm việc theo phương pháp Agile, cho phép khách hàng review và feedback liên tục. Mỗi giai đoạn đều có điểm kiểm tra để đảm bảo sản phẩm đáp ứng đúng yêu cầu.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Luxuria có làm việc với khách hàng nước ngoài không?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Có, chúng tôi đã và đang phục vụ nhiều khách hàng quốc tế tại Mỹ, Singapore, Nhật Bản và các nước khác. Đội ngũ của chúng tôi thành thạo tiếng Anh và có kinh nghiệm làm việc với các múi giờ khác nhau.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bắt Đầu Dự Án Của Bạn Ngay Hôm Nay</h2>
+                <p>Liên hệ để nhận tư vấn miễn phí và báo giá chi tiết</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Liên Hệ Ngay
+                    </a>
+                    <button class="btn btn-outline btn-large" id="getQuoteBtn">
+                        <i class="fas fa-file-alt"></i> Nhận Báo Giá
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Luxuria</span>
+                    </div>
+                    <p>Mang đến sự sang trọng và đẳng cấp trong từng dịch vụ.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-social="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-social="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="about.html">Giới Thiệu</a></li>
+                        <li><a href="services.html">Dịch Vụ</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="#design">Thiết Kế</a></li>
+                        <li><a href="#development">Phát Triển Web</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                        <li><a href="#consulting">Tư Vấn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@luxuria.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxuria. Tất cả quyền được bảo lưu.</p>
+                <div class="footer-links">
+                    <a href="#" id="privacyLink">Chính Sách Bảo Mật</a>
+                    <a href="#" id="termsLink">Điều Khoản Sử Dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Order Service Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đặt Dịch Vụ</h2>
+                <button class="modal-close" data-modal="orderModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="orderService">Dịch vụ</label>
+                        <select id="orderService" required>
+                            <option value="">Chọn dịch vụ</option>
+                            <option value="design">Thiết Kế Sáng Tạo</option>
+                            <option value="development">Phát Triển Website</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="consulting">Tư Vấn Chiến Lược</option>
+                            <option value="mobile">Phát Triển Mobile App</option>
+                            <option value="support">Hỗ Trợ & Bảo Trì</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orderName">Họ và tên</label>
+                            <input type="text" id="orderName" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderCompany">Công ty</label>
+                            <input type="text" id="orderCompany" placeholder="Tên công ty">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orderEmail">Email</label>
+                            <input type="email" id="orderEmail" placeholder="Nhập email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderPhone">Số điện thoại</label>
+                            <input type="tel" id="orderPhone" placeholder="Nhập số điện thoại" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderBudget">Ngân sách dự kiến</label>
+                        <select id="orderBudget">
+                            <option value="">Chọn mức ngân sách</option>
+                            <option value="under10">Dưới 10 triệu</option>
+                            <option value="10-30">10 - 30 triệu</option>
+                            <option value="30-50">30 - 50 triệu</option>
+                            <option value="50-100">50 - 100 triệu</option>
+                            <option value="over100">Trên 100 triệu</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderDescription">Mô tả yêu cầu</label>
+                        <textarea id="orderDescription" placeholder="Mô tả chi tiết yêu cầu của bạn" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Gửi Yêu Cầu</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Nhận Báo Giá</h2>
+                <button class="modal-close" data-modal="quoteModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quoteName">Họ và tên</label>
+                            <input type="text" id="quoteName" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteEmail">Email</label>
+                            <input type="email" id="quoteEmail" placeholder="Nhập email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quotePhone">Số điện thoại</label>
+                        <input type="tel" id="quotePhone" placeholder="Nhập số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Dịch vụ quan tâm</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="design">
+                                <span>Thiết kế</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="development">
+                                <span>Phát triển Web</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="marketing">
+                                <span>Marketing</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="mobile">
+                                <span>Mobile App</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteMessage">Thông tin thêm</label>
+                        <textarea id="quoteMessage" placeholder="Mô tả dự án hoặc yêu cầu của bạn" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Nhận Báo Giá</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plan Modal -->
+    <div class="modal" id="planModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Ký Gói Dịch Vụ</h2>
+                <button class="modal-close" data-modal="planModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="selected-plan-info" id="selectedPlanInfo">
+                    <!-- Plan info will be inserted here -->
+                </div>
+                <form id="planForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="planName">Họ và tên</label>
+                            <input type="text" id="planName" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="planEmail">Email</label>
+                            <input type="email" id="planEmail" placeholder="Nhập email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="planPhone">Số điện thoại</label>
+                        <input type="tel" id="planPhone" placeholder="Nhập số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="planCompany">Công ty</label>
+                        <input type="text" id="planCompany" placeholder="Tên công ty (nếu có)">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Xác Nhận Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Common Modals -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Nhập</h2>
+                <button class="modal-close" data-modal="loginModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Nhập</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Ký</h2>
+                <button class="modal-close" data-modal="registerModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="registerFirstName">Họ</label>
+                            <input type="text" id="registerFirstName" placeholder="Nhập họ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerLastName">Tên</label>
+                            <input type="text" id="registerLastName" placeholder="Nhập tên" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="registerPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content modal-small">
+            <div class="modal-body text-center">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 id="successTitle">Thành Công!</h2>
+                <p id="successMessage">Thao tác đã được thực hiện thành công.</p>
+                <button class="btn btn-primary" data-modal="successModal">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="termsModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Điều Khoản Sử Dụng</h2>
+                <button class="modal-close" data-modal="termsModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <p>Nội dung điều khoản sử dụng...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="termsModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="privacyModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Chính Sách Bảo Mật</h2>
+                <button class="modal-close" data-modal="privacyModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <p>Nội dung chính sách bảo mật...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="privacyModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

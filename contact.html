@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxuria - Liên Hệ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-gem"></i>
+                    <span>Luxuria</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="services.html">Dịch Vụ</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-outline" id="loginBtn">Đăng Nhập</button>
+                <button class="btn btn-primary" id="registerBtn">Đăng Ký</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Liên Hệ</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Trang Chủ</a>
+                <span>/</span>
+                <span>Liên Hệ</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    <p class="contact-intro">Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn. Hãy liên hệ qua các kênh dưới đây hoặc gửi tin nhắn trực tiếp.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Địa Chỉ</h4>
+                                <p>123 Đường ABC, Phường XYZ<br>Quận 1, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Điện Thoại</h4>
+                                <p><a href="tel:+84123456789">+84 123 456 789</a></p>
+                                <p><a href="tel:+84987654321">+84 987 654 321</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@luxuria.vn">info@luxuria.vn</a></p>
+                                <p><a href="mailto:support@luxuria.vn">support@luxuria.vn</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Giờ Làm Việc</h4>
+                                <p>Thứ 2 - Thứ 6: 8:00 - 18:00</p>
+                                <p>Thứ 7: 8:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Kết Nối Với Chúng Tôi</h4>
+                        <div class="social-links large">
+                            <a href="#" class="social-link" data-social="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" data-social="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link" data-social="youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Gửi Tin Nhắn</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Họ và tên <span class="required">*</span></label>
+                                <input type="text" id="contactName" placeholder="Nhập họ và tên" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email <span class="required">*</span></label>
+                                <input type="email" id="contactEmail" placeholder="Nhập email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Số điện thoại <span class="required">*</span></label>
+                                <input type="tel" id="contactPhone" placeholder="Nhập số điện thoại" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Chủ đề</label>
+                                <select id="contactSubject">
+                                    <option value="">Chọn chủ đề</option>
+                                    <option value="general">Thông tin chung</option>
+                                    <option value="quote">Yêu cầu báo giá</option>
+                                    <option value="support">Hỗ trợ kỹ thuật</option>
+                                    <option value="partnership">Hợp tác kinh doanh</option>
+                                    <option value="feedback">Góp ý / Phản hồi</option>
+                                    <option value="other">Khác</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Nội dung <span class="required">*</span></label>
+                            <textarea id="contactMessage" placeholder="Nhập nội dung tin nhắn" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                            <div class="char-count"><span id="charCount">0</span>/500</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="contactConsent" required>
+                                <span>Tôi đồng ý với <a href="#" id="privacyLinkContact">chính sách bảo mật</a> và cho phép Luxuria liên hệ với tôi.</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <i class="fas fa-paper-plane"></i> Gửi Tin Nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vị Trí Của Chúng Tôi</h2>
+                <p class="section-subtitle">Ghé thăm văn phòng của chúng tôi</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Bản đồ vị trí văn phòng</p>
+                    <button class="btn btn-primary" id="openMapBtn">
+                        <i class="fas fa-external-link-alt"></i> Mở Google Maps
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên Hệ Nhanh</h2>
+                <p class="section-subtitle">Chọn phương thức phù hợp với bạn</p>
+            </div>
+            <div class="quick-contact-grid">
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Gọi Điện</h3>
+                    <p>Nói chuyện trực tiếp với đội ngũ tư vấn</p>
+                    <button class="btn btn-primary" id="callNowBtn">
+                        <i class="fas fa-phone"></i> Gọi Ngay
+                    </button>
+                </div>
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Trò chuyện trực tuyến với hỗ trợ viên</p>
+                    <button class="btn btn-primary" id="liveChatBtn">
+                        <i class="fas fa-comment-dots"></i> Bắt Đầu Chat
+                    </button>
+                </div>
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Đặt Lịch Hẹn</h3>
+                    <p>Hẹn gặp trực tiếp hoặc qua video call</p>
+                    <button class="btn btn-primary" id="bookAppointmentBtn">
+                        <i class="fas fa-calendar-plus"></i> Đặt Lịch
+                    </button>
+                </div>
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Nhắn tin qua WhatsApp</p>
+                    <button class="btn btn-primary" id="whatsappBtn">
+                        <i class="fab fa-whatsapp"></i> Nhắn Tin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+                <p class="section-subtitle">Tìm câu trả lời nhanh cho các thắc mắc phổ biến</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Làm thế nào để bắt đầu một dự án với Luxuria?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Bạn có thể liên hệ với chúng tôi qua form liên hệ, email hoặc điện thoại. Sau khi nhận được yêu cầu, đội ngũ tư vấn sẽ liên hệ lại trong vòng 24 giờ để thảo luận chi tiết về dự án của bạn.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Thời gian phản hồi của đội ngũ hỗ trợ là bao lâu?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Chúng tôi cam kết phản hồi trong vòng 2-4 giờ làm việc cho các yêu cầu khẩn cấp và trong vòng 24 giờ cho các yêu cầu thông thường.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Luxuria có hỗ trợ khách hàng ngoài giờ làm việc không?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Với các gói dịch vụ Premium và Enterprise, chúng tôi cung cấp hỗ trợ 24/7. Các khách hàng khác có thể để lại tin nhắn và chúng tôi sẽ phản hồi vào ngày làm việc tiếp theo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tôi có thể ghé thăm văn phòng Luxuria không?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tất nhiên! Chúng tôi rất hoan nghênh bạn đến thăm văn phòng. Vui lòng đặt lịch hẹn trước để đảm bảo có người đón tiếp và tư vấn cho bạn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Luxuria</span>
+                    </div>
+                    <p>Mang đến sự sang trọng và đẳng cấp trong từng dịch vụ.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-social="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-social="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="about.html">Giới Thiệu</a></li>
+                        <li><a href="services.html">Dịch Vụ</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="services.html#design">Thiết Kế</a></li>
+                        <li><a href="services.html#development">Phát Triển Web</a></li>
+                        <li><a href="services.html#marketing">Marketing</a></li>
+                        <li><a href="services.html#consulting">Tư Vấn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@luxuria.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxuria. Tất cả quyền được bảo lưu.</p>
+                <div class="footer-links">
+                    <a href="#" id="privacyLink">Chính Sách Bảo Mật</a>
+                    <a href="#" id="termsLink">Điều Khoản Sử Dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Appointment Modal -->
+    <div class="modal" id="appointmentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đặt Lịch Hẹn</h2>
+                <button class="modal-close" data-modal="appointmentModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label for="appointmentName">Họ và tên</label>
+                        <input type="text" id="appointmentName" placeholder="Nhập họ và tên" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentEmail">Email</label>
+                            <input type="email" id="appointmentEmail" placeholder="Nhập email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentPhone">Số điện thoại</label>
+                            <input type="tel" id="appointmentPhone" placeholder="Nhập số điện thoại" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentType">Hình thức</label>
+                        <select id="appointmentType" required>
+                            <option value="">Chọn hình thức</option>
+                            <option value="office">Gặp trực tiếp tại văn phòng</option>
+                            <option value="video">Video call (Zoom/Google Meet)</option>
+                            <option value="phone">Gọi điện thoại</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentDate">Ngày</label>
+                            <input type="date" id="appointmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime">Giờ</label>
+                            <select id="appointmentTime" required>
+                                <option value="">Chọn giờ</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentNote">Nội dung cần trao đổi</label>
+                        <textarea id="appointmentNote" placeholder="Mô tả ngắn gọn nội dung cuộc hẹn" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Xác Nhận Đặt Lịch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Modal -->
+    <div class="modal" id="chatModal">
+        <div class="modal-content modal-chat">
+            <div class="modal-header">
+                <h2><i class="fas fa-comments"></i> Live Chat</h2>
+                <button class="modal-close" data-modal="chatModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="chat-message bot">
+                        <div class="message-avatar"><i class="fas fa-robot"></i></div>
+                        <div class="message-content">
+                            <p>Xin chào! Tôi là trợ lý ảo của Luxuria. Tôi có thể giúp gì cho bạn?</p>
+                            <span class="message-time">Vừa xong</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <form id="chatForm">
+                        <input type="text" id="chatInput" placeholder="Nhập tin nhắn..." autocomplete="off">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Common Modals -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Nhập</h2>
+                <button class="modal-close" data-modal="loginModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Nhập</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Ký</h2>
+                <button class="modal-close" data-modal="registerModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="registerFirstName">Họ</label>
+                            <input type="text" id="registerFirstName" placeholder="Nhập họ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerLastName">Tên</label>
+                            <input type="text" id="registerLastName" placeholder="Nhập tên" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="registerPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content modal-small">
+            <div class="modal-body text-center">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 id="successTitle">Thành Công!</h2>
+                <p id="successMessage">Thao tác đã được thực hiện thành công.</p>
+                <button class="btn btn-primary" data-modal="successModal">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="termsModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Điều Khoản Sử Dụng</h2>
+                <button class="modal-close" data-modal="termsModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <p>Nội dung điều khoản sử dụng...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="termsModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="privacyModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Chính Sách Bảo Mật</h2>
+                <button class="modal-close" data-modal="privacyModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <h3>1. Thu thập thông tin</h3>
+                <p>Chúng tôi thu thập thông tin cá nhân khi bạn đăng ký tài khoản, sử dụng dịch vụ hoặc liên hệ với chúng tôi.</p>
+                
+                <h3>2. Sử dụng thông tin</h3>
+                <p>Thông tin được sử dụng để cung cấp dịch vụ, cải thiện trải nghiệm người dùng và gửi thông tin marketing (nếu được đồng ý).</p>
+                
+                <h3>3. Bảo vệ thông tin</h3>
+                <p>Chúng tôi áp dụng các biện pháp bảo mật kỹ thuật và tổ chức để bảo vệ thông tin cá nhân của bạn.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="privacyModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

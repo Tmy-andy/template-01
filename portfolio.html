@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxuria - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-gem"></i>
+                    <span>Luxuria</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="services.html">Dịch Vụ</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-outline" id="loginBtn">Đăng Nhập</button>
+                <button class="btn btn-primary" id="registerBtn">Đăng Ký</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Trang Chủ</a>
+                <span>/</span>
+                <span>Portfolio</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dự Án Tiêu Biểu</h2>
+                <p class="section-subtitle">Những tác phẩm đáng tự hào của chúng tôi</p>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="design">Thiết Kế</button>
+                <button class="filter-btn" data-filter="website">Website</button>
+                <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-1">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="ecommerce">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="ecommerce">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Website</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-2">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="branding">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="branding">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Brand Identity Design</h3>
+                        <p>Thiết Kế</p>
+                        <div class="portfolio-tags">
+                            <span>Branding</span>
+                            <span>Logo</span>
+                            <span>Visual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-3">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="fitness">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="fitness">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fitness Tracking App</h3>
+                        <p>Mobile App</p>
+                        <div class="portfolio-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="campaign">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="campaign">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Digital Campaign</h3>
+                        <p>Marketing</p>
+                        <div class="portfolio-tags">
+                            <span>Social Media</span>
+                            <span>SEO</span>
+                            <span>PPC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-5">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="education">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="education">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Learning Platform</h3>
+                        <p>Website</p>
+                        <div class="portfolio-tags">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-6">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="uiux">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="uiux">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>UI/UX Design System</h3>
+                        <p>Thiết Kế</p>
+                        <div class="portfolio-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Prototype</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-7">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="food">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="food">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Food Delivery App</h3>
+                        <p>Mobile App</p>
+                        <div class="portfolio-tags">
+                            <span>Flutter</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder gradient-8">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn view-project" data-project="corporate">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn like-project" data-project="corporate">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Website</h3>
+                        <p>Website</p>
+                        <div class="portfolio-tags">
+                            <span>WordPress</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center">
+                <button class="btn btn-outline btn-large" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i> Xem Thêm Dự Án
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Đối Tác Tin Cậy</h2>
+                <p class="section-subtitle">Những thương hiệu đã đồng hành cùng chúng tôi</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-item">
+                    <div class="client-logo">
+                        <i class="fas fa-building"></i>
+                        <span>TechCorp</span>
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>ShopMart</span>
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>HealthCare</span>
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">
+                        <i class="fas fa-university"></i>
+                        <span>EduPro</span>
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">
+                        <i class="fas fa-plane"></i>
+                        <span>TravelGo</span>
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">
+                        <i class="fas fa-coffee"></i>
+                        <span>CafeBreak</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Muốn Có Một Dự Án Ấn Tượng?</h2>
+                <p>Hãy để chúng tôi biến ý tưởng của bạn thành hiện thực</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i> Bắt Đầu Ngay
+                    </a>
+                    <button class="btn btn-outline btn-large" id="discussProjectBtn">
+                        <i class="fas fa-comments"></i> Thảo Luận Dự Án
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Luxuria</span>
+                    </div>
+                    <p>Mang đến sự sang trọng và đẳng cấp trong từng dịch vụ.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-social="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-social="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="about.html">Giới Thiệu</a></li>
+                        <li><a href="services.html">Dịch Vụ</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="services.html#design">Thiết Kế</a></li>
+                        <li><a href="services.html#development">Phát Triển Web</a></li>
+                        <li><a href="services.html#marketing">Marketing</a></li>
+                        <li><a href="services.html#consulting">Tư Vấn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@luxuria.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxuria. Tất cả quyền được bảo lưu.</p>
+                <div class="footer-links">
+                    <a href="#" id="privacyLink">Chính Sách Bảo Mật</a>
+                    <a href="#" id="termsLink">Điều Khoản Sử Dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Project Detail Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="projectModalTitle">Chi Tiết Dự Án</h2>
+                <button class="modal-close" data-modal="projectModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="projectModalBody">
+                <!-- Content will be dynamically loaded -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-modal="projectModal">Đóng</button>
+                <button class="btn btn-primary" id="contactAboutProject">Liên Hệ Về Dự Án</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discuss Project Modal -->
+    <div class="modal" id="discussModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Thảo Luận Dự Án</h2>
+                <button class="modal-close" data-modal="discussModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="discussForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="discussName">Họ và tên</label>
+                            <input type="text" id="discussName" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="discussEmail">Email</label>
+                            <input type="email" id="discussEmail" placeholder="Nhập email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="discussPhone">Số điện thoại</label>
+                        <input type="tel" id="discussPhone" placeholder="Nhập số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="discussType">Loại dự án</label>
+                        <select id="discussType" required>
+                            <option value="">Chọn loại dự án</option>
+                            <option value="website">Website</option>
+                            <option value="mobile">Mobile App</option>
+                            <option value="design">Thiết kế</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="discussDescription">Mô tả dự án</label>
+                        <textarea id="discussDescription" placeholder="Mô tả ý tưởng và yêu cầu của bạn" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="discussTimeline">Thời gian dự kiến</label>
+                        <select id="discussTimeline">
+                            <option value="">Chọn thời gian</option>
+                            <option value="urgent">Gấp (1-2 tuần)</option>
+                            <option value="normal">Bình thường (1-2 tháng)</option>
+                            <option value="flexible">Linh hoạt (3+ tháng)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Gửi Yêu Cầu</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Common Modals -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Nhập</h2>
+                <button class="modal-close" data-modal="loginModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Nhập</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Ký</h2>
+                <button class="modal-close" data-modal="registerModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="registerFirstName">Họ</label>
+                            <input type="text" id="registerFirstName" placeholder="Nhập họ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerLastName">Tên</label>
+                            <input type="text" id="registerLastName" placeholder="Nhập tên" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Mật khẩu</label>
+                        <div class="password-input">
+                            <input type="password" id="registerPassword" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content modal-small">
+            <div class="modal-body text-center">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 id="successTitle">Thành Công!</h2>
+                <p id="successMessage">Thao tác đã được thực hiện thành công.</p>
+                <button class="btn btn-primary" data-modal="successModal">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="termsModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Điều Khoản Sử Dụng</h2>
+                <button class="modal-close" data-modal="termsModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <p>Nội dung điều khoản sử dụng...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="termsModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="privacyModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Chính Sách Bảo Mật</h2>
+                <button class="modal-close" data-modal="privacyModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <p>Nội dung chính sách bảo mật...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-modal="privacyModal">Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
